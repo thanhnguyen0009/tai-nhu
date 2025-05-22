@@ -187,6 +187,26 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('./fonts/PinyonScript-Regular.woff2') format('woff2'),
+        url('./fonts/PinyonScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('./fonts/PinyonScript.woff2') format('woff2'),
+        url('./fonts/PinyonScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 
 
@@ -197,6 +217,7 @@
     --font-uvn: 'UVN Ke Chuyen3';
     --font-gotham: 'SVN-Gotham';
     --font-ftv: '1FTV VIP NT Seawave';
+    --font-pinyon: 'Pinyon Script';
     --primary-color1: #FFEAD4;
     --primary-color2: #661211;
 }
@@ -435,7 +456,7 @@
 }
 
 .lb-dot{
-    font-family: var(--font-uvn);
+    font-family: var(--font-pinyon);
     font-size: 12px;
 }
 

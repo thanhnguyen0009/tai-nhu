@@ -462,7 +462,7 @@
 
 .btn-box {
     font-family: var(--font-gotham);
-    font-size: .45em;
+    font-size: .55em;
     color: var(--primary-color1);
     border: 2px solid var(--primary-color1);
     padding: 4px 10px;
@@ -1222,27 +1222,12 @@ background-color: var(--primary-color2);
         padding: 10px;
         font-size: .75em;
     }
-    .lb-endd1{
-        font-size: 8px;
-    }
-    .lb-endd2{
-        font-size: 7.5px;
-    }
-    
-    .btn-acc{
-        font-size: .6em;
-    }
-    .btn-acc2{
-        font-size: .5em;
-    }
-    .lb-acc{
-        font-size: .4em;
-    }
-    .lb3-top{
-        font-size: .6em;
-    }
     .inp-ten{
         width: 150px;
+    }
+    .btn-box{
+        margin-bottom: 200px;
+        font-size: .45em;
     }
   }
   

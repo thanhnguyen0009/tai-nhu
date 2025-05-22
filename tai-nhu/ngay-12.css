@@ -475,6 +475,10 @@
     margin-top: 70px;
 }
 
+.box-btn-top{
+    margin-bottom: 50px;
+}
+
 .btn-box {
     font-family: var(--font-gotham);
     font-size: .55em;

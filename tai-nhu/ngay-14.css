@@ -225,61 +225,56 @@
 
 
 /* Hiệu ứng fade-down */
-.lb1-p{
+.lb1-p2, .lb2-p2, .lb7-p2, .lb8-p2, .lb9-p2, .lb-thamdu, .lb-span, .lb-span-lb2, .lb10-p2, .dresscode{
     transform: translateY(-50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1s, opacity 1s;
 }
-
-.lb1-p.visible{
+.lb1-p2.visible, .lb2-p2.visible, .lb7-p2.visible, .lb8-p2.visible, .lb9-p2.visible, .lb-thamdu.visible, .lb-span.visible, .lb-span-lb2.visible, .lb10-p2.visible, .dresscode.visible {
     transform: translateY(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-up */
-.lb1-p{
+.lb1-p1, .lb3-p2, .lb4-p2, .lb5-p2, .lb6-p2, .in-fe, .lb-span2, .lb-til, .lb-span3, .lb11-p2, .lb12-p2, .lb13-p2 {
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1s, opacity 1s;
 }
-
-.lb1-p.visible{
+.lb1-p1.visible, .lb3-p2.visible, .lb4-p2.visible, .lb5-p2.visible, .lb6-p2.visible, .in-fe.visible, .lb-span2.visible, .lb-til.visible, .lb-span3.visible, .lb11-p2.visible, .lb12-p2.visible, .lb13-p2.visible {
     transform: translateY(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-right */
-.lb2-p {
+.lb-timeline {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1s, opacity 1s;
 }
-
-.lb2-p.visible {
+.lb-timeline.visible {
     transform: translateX(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-left */
-.lb3-p {
+.lb-time {
     transform: translateX(50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1s, opacity 1s;
 }
-
-.lb3-p.visible {
+.lb-time.visible {
     transform: translateX(0);
     opacity: 1;
 }
 
 /* Hiệu ứng zoom-in */
-.d {
+.img-p1, .img-map, .lb1-timeline, .container-check, .inp-ten, .xacnhan, .lb-dress {
     transform: scale(0.5);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1s, opacity 1s;
 }
-
-.xacnhan.visible {
+.img-p1.visible, .img-map.visible, .lb1-timeline.visible, .container-check.visible, .inp-ten.visible, .xacnhan.visible, .lb-dress.visible {
     transform: scale(1);
     opacity: 1;
 }
@@ -695,10 +690,31 @@
     color: var(--primary-color2);
     text-decoration: none;
     padding: 2px 30px 4px;
-    border-radius: 7px;
+    border-radius: 10px;
     font-size: .8em;
     font-weight: 500;
     margin: 20px 0 70px;
+     position: relative;
+    display: inline-block;
+    animation: bubbleZoom 1.5s ease-in-out infinite;
+}
+
+
+
+.btn-map:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bubbleZoom {
+    0% {
+        transform: scale(.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.9);
+    }
 }
 
 .p3{

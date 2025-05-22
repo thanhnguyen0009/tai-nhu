@@ -1253,5 +1253,8 @@ background-color: var(--primary-color2);
     .forrm{
         width: 90%;
     }
+    .til-check{
+        font-size: .6em;
+    }
   }
   

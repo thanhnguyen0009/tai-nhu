@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+    <meta property="og:image" content="https://yenstudio.com.vn/son-anh.jpg" />
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="TÀI - NHƯ" />
+    <meta property="og:description" content="HỮU TÀI - QUỲNH NHƯ" />
+    <meta property="og:url" content="https://yenstudio.com.vn/son-anh/thiepmoi.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./tai-nhu/ngay-14.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>HỮU TÀI - QUỲNH NHƯ</title>
+    <style>
+        .popup {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.3s ease;
+          z-index: 1000;
+        }
+      
+        .popup.show {
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+      </style>
+      
+</head>
+<body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <div class="container-wrapper">
+            <!-- <div class="box-circle">
+                <div class="circle" id="musicCircle">
+                    <img src="./son-anh/anh/cd-02.png" alt="Music Icon" class="circle-image">
+                    <audio id="audio" src="./son-anh/audio/le-duong.mp3" loop></audio>
+                </div>
+                <label for="audio" class="lb-circle">No Music? <br> Click Me</label>
+            </div>
+            <div class="turn-top">
+                <a href="#box-top" class="turn"><i class="fa-solid fa-up-long"></i></a>
+            </div> -->
+            
+            <div class="p1">
+                <div class="box-dot-p1">
+                    <i class="fa-solid fa-circle"></i>
+                    <label for="" class="lb-dot">Together, Since Always</label>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <label for="" class="lb1-p1">PHẠM HỮU TÀI <br>
+                PHẠM VŨ QUỲNH NHƯ</label>
+                <img src="./tai-nhu/anh/nt14-04.png" alt="" class="img-p1">
+            </div>
+
+            <div class="p2">
+                <label for="" class="lb1-p2">invitation</label>
+                <label for="" class="lb2-p2">trân trọng báo tin <br> lễ TÂN HÔN của <strong>hữu tài & quỳnh như </strong>tại </label>
+                <label for="" class="lb-span-lb2">Wedding ceremony</label>
+                <label for="" class="lb3-p2">09:00 | Tư Gia nhà Gái</label>
+                <label for="" class="lb4-p2">43/2q ấp đông lân, xã bà điểm, h.hóc môn, hcm</label>
+                <label for="" class="lb5-p2">43/2Q Dong Lan Hamlet, Ba Diem Commune, d. Hoc Mon, Hcm City</label>
+                <i class="fa-solid fa-diamond"></i>
+                <label for="" class="lb3-p2">11:00 | Tư Gia nhà Trai</label>
+                <label for="" class="lb4-p2">NHÀ SỐ 03, ĐƯỜNG SỐ 02, KDC CITYLAND, P. 5, GÒ VẤP, HCM</label>
+                <label for="" class="lb5-p2">No. 03, Street No. 02, Cityland Residential Area, W.5, d.Go Vap, Hcm City</label>
+                <label for="" class="lb6-p2"><i>june 12, 2024</i></label>
+                <img src="./tai-nhu/anh/key14-04.png" alt="" class="img1-p2">
+                <label for="" class="lb7-p2">wedding reception | <strong>18:00pm</strong></label>
+                <label for="" class="lb8-p2"><strong>tiệc thành hôn</strong> được tổ chúc vào lúc <strong>18:00</strong></label>
+                <label for="" class="lb9-p2">14.06.2025</label>
+                <label for="" class="lb10-p2">june 14, 2024</label>
+                <i class="fa-solid fa-diamond"></i>
+                <label for="" class="lb11-p2">VINPEARL LANDMARK 81</label>
+                <label for="" class="lb12-p2">Sảnh Saigon 2&3, Tầng B2, AUTOGRAPH COLLECTION <br>
+                <span class="lb12-p2-con">720A Điện Biên Phủ, P.22, Q.Bình Thạnh, HCM</span></label>
+                <label for="" class="lb13-p2">Saigon Hall 2&3, B2 Floor, AUTOGRAPH COLLECTION <br>
+                                ST. 720A Dien Bien Phu, W. 22, D. Binh Thanh, HCM City</label>
+                <img src="./tai-nhu/anh/map14-04.png" alt="" class="img-map">
+                
+
+                <a href="https://maps.app.goo.gl/dpQkxcHVbaHYb8zAA" class="btn-map" target="_blank">MAPS</a>
+            </div>
+
+            <div class="p3">
+                <div class="box-timeline">
+                    <img src="./tai-nhu/anh/icon12-04.png" alt="" class="img-timeline">
+                    <lable class="lb1-timeline">timeline</lable>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <label for="" class="lb-timeline">ĐÓN KHÁCH</label>
+                            <label for="" class="lb-time">18:00PM</label>
+                        </div>
+                        <div class="timeline-item">
+                            <label for="" class="lb-timeline">LÀM LỄ</label>
+                            <label for="" class="lb-time">19:00PM</label>
+                        </div>
+                        <div class="timeline-item">
+                            <label for="" class="lb-timeline">KHAI TIỆC</label>
+                            <label for="" class="lb-time">19:30PM</label>
+                        </div>
+                        <div class="timeline-item">
+                            <label for="" class="lb-timeline">CA NHẠC, KHIÊU VŨ</label>
+                            <label for="" class="lb-time">20:00PM</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-dresscode">
+                    <img src="./tai-nhu/anh/no12-04.png" alt="" class="img-dress">
+                    <label for="" class="lb-dress">dresscode</label>
+                    <div class="dresscode">
+                        <div class="dress-item">
+                            <img src="./tai-nhu/anh/red14-04.png" alt="" class="img-color">
+                            <label for="" class="lb-dress-item">ĐỎ</label>
+                            <label for="" class="lb-dress-item2">RED</label>
+                        </div>
+                        <div class="dress-item">
+                            <img src="./tai-nhu/anh/black12-04.png" alt="" class="img-color">
+                            <label for="" class="lb-dress-item">ĐEN</label>
+                            <label for="" class="lb-dress-item2">BLACK</label>
+                        </div>
+                        <div class="dress-item">
+                            <img src="./tai-nhu/anh/gray12-04.png" alt="" class="img-color">
+                            <label for="" class="lb-dress-item">BẠC</label>
+                            <label for="" class="lb-dress-item2">SLIVER</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+                
+                <!-- <a href="javascript:void(0);" onclick="showPage('page1')">Quay Lại Trang Mở Đầu</a> -->
+                <form action="" name="ngay-14">
+                    <div class="forrm">
+                    <div class="feed-info">
+                        <img src="./tai-nhu/anh/key14-04.png" alt="" class="img-form-top">
+                        <label class="lb-thamdu">Xác nhận tham dự</label>
+                        <label for="" class="lb-span">Attendance confirmation</label>
+                        <i class="fa-solid fa-diamond"></i>
+                        <label for="" class="in-fe">KHÁCH MỜI VUI LÒNG XÁC NHẬN THAM DỰ <strong>TRƯỚC NGÀY 01.06</strong> <br>
+                                                    ĐỂ CHÚNG TÔI CÓ THỂ CHUẨN BỊ CHU ĐÁO NHẤT</label>
+                        <label for="" class="lb-span2">WE KINDLY request that you confirm your attendance <br>
+                                                    <strong>BEFORE JUNE 01</strong>, so we may prepare accordingly.</label>
+                    </div>
+                    
+                    <hr>
+                    <div class="container-check">
+                        <input required class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                        <label class="check-box" for="yes">
+                            <h3 class="til-check">CÓ <span class="con">(YES)</span></h3>
+                        </label>
+                        <input required class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                        <label class="check-box" for="no"> 
+                            <h3 class="til-check">KHÔNG <span class="con">(NO)</span></h3>
+                        </label>
+                    </div>
+
+                    <div class="box-ten">
+                        <input required class="inp-ten" type="text"  name="TÊN KHÁCH MỜI" placeholder="Tên khách mời (NAME)">
+                        <!-- <input required class="inp-ten" type="email" name="EMAIL ADDRESS" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input required class="inp-ten" type="text" name="Date and time of flight to Vietnam" placeholder="Date of your arrival flight to Vietnam:">
+                        <input required class="inp-ten" type="text"  name="HOTEL NAME" placeholder="Hotel name:"> -->
+                        <!-- <input required class="inp-ten" type="number" name="SỐ NGƯỜI ĐI KÈM" placeholder="SỐ NGƯỜI ĐI KÈM" min="0" max="99" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2);" /> -->
+                        <!-- <textarea id="loi-chuc" name="LỜI CHÚC" rows="4" cols="50" placeholder="HÃY GỬI LỜI CHÚC ĐẾN TIẾN SƠN VÀ TRANG ANH NHÉ!"></textarea> -->
+                    </div>
+                    <div class="box-label">
+                        <label for="" class="lb-til">BẠN CÓ YÊU CẦU ĂN KIÊNG ĐẶC BIỆT NÀO KHÔNG?</label>
+                        <label for="" class="lb-span3">Do you have any dietary requirements? </label>
+                    </div>
+                    <div class="container-check">
+                        <input required class="box-feed" type="radio" value="ĂN MẶN" id="food" name="YÊU CẦU ĂN KIÊNG">
+                        <label class="check-box" for="food">
+                            <h3 class="til-check">ĂN MẶN  <span class="con">(NON - VEGETARIAN)</span></h3>
+                        </label>
+                        <input required class="box-feed" type="radio" value="KHÔNG" id="nofood" name="YÊU CẦU ĂN KIÊNG">
+                        <label class="check-box" for="nofood"> 
+                            <h3 class="til-check">ĂN CHAY <span class="con">(VEGETARIAN)</span></h3>
+                        </label>
+                    </div>
+                    <div class="box-ten">
+                        <input required class="inp-ten" type="text"  name="LƯU Ý THỨC ĂN" placeholder="LƯU Ý ĐẶC BIỆT KHÁC VỀ MÓN ĂN? (ANOTHER?)">
+                    </div>
+                    <div class="wrapper">
+                        <button class="xacnhan" type="submit">XÁC NHẬN <span class="con">(CONFIRM)</span></button>
+                    </div>
+                    </div>
+                    <label for="" class="lb-tilend">See you again!</label>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+ <script>
+        function showPage(pageId) {
+            try {
+                // Ẩn tất cả các trang
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                // Hiện trang được chọn
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                } else {
+                    console.error('Không tìm thấy trang với ID: ' + pageId);
+                }
+            } catch (error) {
+                console.error('Lỗi khi chuyển trang: ', error);
+            }
+        }
+    </script>
+    <script>
+        window.onload = function() {
+    // Lấy tất cả các phần tử cho các hiệu ứng fade-down, fade-up, fade-right, fade-left, zoom-in
+    const fadeDownElements = document.querySelectorAll('');  // Các phần tử fade-down
+    const fadeUpElements = document.querySelectorAll('');    // Các phần tử fade-up
+    const fadeRightElements = document.querySelectorAll('');                               // Các phần tử fade-right
+    const fadeLeftElements = document.querySelectorAll('');                                // Các phần tử fade-left
+    const zoomInElements = document.querySelectorAll('');                // Các phần tử zoom-in
+
+    // Cấu hình của IntersectionObserver
+    const options = {
+        root: null, // Theo mặc định là viewport
+        threshold: 0.5 // Kích hoạt khi 50% phần tử hiển thị trong viewport
+    };
+
+    // Tạo đối tượng IntersectionObserver để theo dõi sự xuất hiện và mất đi của phần tử
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Nếu phần tử xuất hiện trong viewport, thêm lớp "visible"
+                entry.target.classList.add('visible');
+            } else {
+                // Nếu phần tử không còn trong viewport, xóa lớp "visible"
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, options);
+
+    // Quan sát các phần tử theo từng hiệu ứng
+    fadeDownElements.forEach(element => observer.observe(element));
+    fadeUpElements.forEach(element => observer.observe(element));
+    fadeRightElements.forEach(element => observer.observe(element));
+    fadeLeftElements.forEach(element => observer.observe(element));
+    zoomInElements.forEach(element => observer.observe(element));
+};
+
+    </script>
+
+<script>
+    // Mở modal theo data-modal
+    document.querySelectorAll(".open-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const modalId = btn.getAttribute("data-modal");
+        document.getElementById(modalId).style.display = "flex";
+      });
+    });
+  
+    // Đóng modal
+    document.querySelectorAll(".closeModal").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.closest(".modal-overlay").style.display = "none";
+      });
+    });
+  
+    // Đóng modal khi click ngoài khung
+    document.querySelectorAll(".modal-overlay").forEach(overlay => {
+      overlay.addEventListener("click", e => {
+        if (e.target === overlay) {
+          overlay.style.display = "none";
+        }
+      });
+    });
+  
+    // Copy text vào clipboard
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showPopup();
+      });
+    }
+  
+    // Hiện popup thành công
+    function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    showPopup(); // Hiện thông báo
+  });
+}
+
+function showPopup() {
+  const popup = document.getElementById("popup-success");
+  popup.classList.add("show");
+  setTimeout(() => {
+    popup.classList.remove("show");
+  }, 2000); // 2 giây ẩn đi
+}
+  </script>
+  
+  
+
+  
+
+
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbyReaI-B3zHsR5hMVrlC2TAUZH4aWNAyLQvMTLP2OxN1H8hdC1an9fwc1VdLdHNBQ9u/exec';
+        const form = document.forms['ngay-14']; // Thay 'your-form-name' bằng tên form của bạn
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+
+            document.getElementById('loading-container').style.display = 'flex';
+
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'THÀNH CÔNG!',
+                            icon: 'success',
+                            text: 'Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nhaa <3',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: 'Đóng',
+                            showCloseButton: true,
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                });
+        });
+</script>
+   <script>
+const musicCircle = document.getElementById("musicCircle");
+const audio = document.getElementById("audio");
+const videoIframe = document.getElementById("video");
+
+// Thêm sự kiện khi nhấn vào vòng tròn
+musicCircle.addEventListener("click", toggleMusic);
+
+// Hàm điều khiển việc phát hoặc tạm dừng nhạc
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Phát nhạc
+        musicCircle.classList.add("spin"); // Bắt đầu xoay
+    } else {
+        audio.pause(); // Dừng nhạc
+        musicCircle.classList.remove("spin"); // Dừng xoay
+    }
+}
+
+</script>
+</body>
+</html>

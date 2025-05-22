@@ -1306,27 +1306,14 @@ font-weight: 400;
         padding: 10px;
         font-size: .75em;
     }
-    .lb-endd1{
-        font-size: 8px;
+      .forrm{
+        width: 90%;
     }
-    .lb-endd2{
-        font-size: 7.5px;
-    }
-    
-    .btn-acc{
+    .til-check{
         font-size: .6em;
     }
-    .btn-acc2{
-        font-size: .5em;
-    }
-    .lb-acc{
-        font-size: .4em;
-    }
-    .lb3-top{
+    .con{
         font-size: .6em;
-    }
-    .inp-ten{
-        width: 150px;
     }
   }
   

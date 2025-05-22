@@ -1244,11 +1244,14 @@ background-color: var(--primary-color2);
         font-size: .75em;
     }
     .inp-ten{
-        width: 150px;
+        width: 90%;
     }
     .btn-box{
         margin-bottom: 200px;
         font-size: .45em;
+    }
+    .forrm{
+        width: 90%;
     }
   }
   

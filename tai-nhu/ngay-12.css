@@ -483,7 +483,7 @@
     font-family: var(--font-gotham);
     font-size: .55em;
     color: var(--primary-color1);
-    border: 2px solid var(--primary-color1);
+    border: .5px solid var(--primary-color1);
     padding: 4px 10px;
     border-radius: 20px;
     text-decoration: none;
@@ -491,7 +491,7 @@
     margin: 20px 0 150px;
     position: relative;
     display: inline-block;
-    animation: bubbleZoom 1.5s ease-in-out infinite;
+    animation: bubbleZoom 1.7s ease-in-out infinite;
 }
 
 .btn-box:hover {
@@ -503,7 +503,7 @@
         transform: scale(.9);
     }
     50% {
-        transform: scale(1);
+        transform: scale(.95);
     }
     100% {
         transform: scale(.9);
@@ -938,13 +938,13 @@ border-radius: 20px;
   /* margin: 0 auto; */
   font-style: normal;
   font-size: .7em;
-  font-weight: 300;
+  font-weight: 500;
   font-family: var(--font-gotham);
   }
 
 .con{
     font-size: .7em;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
 }
   
@@ -953,7 +953,7 @@ border-radius: 20px;
   width: 180px;
   text-align: center;
 display: inline-block;
-border: 2px solid var(--primary-color2);
+border: .5px solid var(--primary-color2);
 padding: 4px 10px;
 margin: 5px 15px 5px 0;
 border-radius: 10px;
@@ -987,9 +987,9 @@ background-color: var(--primary-color2);
         height: 30px;
         text-align: left;
         border-radius: 10px;
-        border: 2px solid var(--primary-color2);
+        border: .5px solid var(--primary-color2);
         font-size: .7em;
-        font-weight: 300;
+        font-weight: 500;
         padding: 2px 10px 3PX;
         margin: 7px 0;
         background: none;
@@ -1003,6 +1003,7 @@ background-color: var(--primary-color2);
         white-space: pre-line;
         color: var(--primary-color2);
         font-size: .7em;
+        font-weight: 500;
       }
 
     textarea {
@@ -1019,7 +1020,7 @@ background-color: var(--primary-color2);
 
     input, textarea { /*thay đổi khi nhập */
         font-family: var(--font-gotham);
-        font-weight: 300;
+        font-weight: 500;
         font-size: .7em;
         color: var(--primary-color2);
     }
@@ -1048,10 +1049,10 @@ background-color: var(--primary-color2);
     background: none;
     color: var(--primary-color2);
     border-radius: 10px;
-    border: 2px solid var(--primary-color2);
+    border: .5px solid var(--primary-color2);
     cursor: pointer;
     width: 150px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: var(--font-gotham);
     margin-top: 10px;
 }

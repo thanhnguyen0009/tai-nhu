@@ -1027,7 +1027,7 @@ background-color: var(--primary-color2);
     
     input::placeholder, textarea::placeholder {
         font-family: var(--font-gotham);
-        font-weight: 300;
+        font-weight: 500;
         font-size: .7em;
         
     }

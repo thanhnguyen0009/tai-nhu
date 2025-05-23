@@ -996,7 +996,7 @@ border-radius: 20px;
   /* margin: 0 auto; */
   font-style: normal;
   font-size: .7em;
-  font-weight: 300;
+  font-weight: 500;
   font-family: var(--font-gotham);
   }
 
@@ -1027,7 +1027,7 @@ font-weight: 400;
 .check-box:hover {
     background-color: var(--primary-color1);
     color: var(--primary-color2);
-    font-weight: boldẻ;
+    font-weight: bolder;
 }
 
   .box-ten{
@@ -1063,6 +1063,7 @@ font-weight: 400;
         white-space: pre-line;
         color: var(--primary-color1);
         font-size: .7em;
+        font-weight: 500;
       }
 
     textarea {
